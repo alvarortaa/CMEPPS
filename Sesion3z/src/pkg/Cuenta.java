@@ -9,7 +9,6 @@ public class Cuenta {
 		this.saldo=saldo;
 	}
 	public double getSaldo() {
-		// TODO Auto-generated method stub
 		return this.saldo;
 	}
 	public void setSaldo(double saldo) {
@@ -20,8 +19,8 @@ public class Cuenta {
 		
 	}
 
-	public void retirar(int i) {
-		this.setSaldo(-3000);
+	public void retirar(double i) {
+		this.setSaldo(this.getSaldo()-i);
 		
 	}
 
