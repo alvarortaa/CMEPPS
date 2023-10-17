@@ -37,12 +37,16 @@ class CuentaTest {
 	void testRetirar() {
 		ctaPruebas.retirar(3000);
 		assertEquals(aux-3000,ctaPruebas.getSaldo());
-	} 
+	}
 	@Test
 	void testIngresar() {
 		ctaPruebas.ingresar(3000);
 		assertEquals(aux+3000,ctaPruebas.getSaldo());
 	}
-	
+	@Test
+	void testRetirarsinSaldoSuficiente() {
+		ctaPruebas.retirar(3000);
+		assertEquals(aux,ctaPruebas.getSaldo());
+	}
 
 }
