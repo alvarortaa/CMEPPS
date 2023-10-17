@@ -20,6 +20,7 @@ public class Cuenta {
 	}
 
 	public void retirar(double i) {
+		if (i<=saldo)
 		this.setSaldo(this.getSaldo()-i);
 		
 	}
